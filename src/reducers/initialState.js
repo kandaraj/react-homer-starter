@@ -16,3 +16,14 @@ export default {
     }
   }
 };
+
+export const user = {
+  user:
+    {
+      name: 'Unknown'
+    }
+};
+
+export const metaData = {
+  appTitle: 'App name'
+}

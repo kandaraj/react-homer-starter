@@ -23,7 +23,7 @@ import  './assets/fonts/pe-icon-7-stroke/css/helper.css';
 
 import { syncHistoryWithStore } from 'react-router-redux';
 
-const store = configureStore();
+const store = configureStore({metaData:{appTitle:'App name'}});
 
 // Create an enhanced history that syncs navigation events with the store
 const history = syncHistoryWithStore(browserHistory, store);

@@ -5,10 +5,7 @@ import React from 'react';
 
 export class Header extends React.Component {
   componentWillMount(){
-    console.log("<Header /> is about to mouunt");
-  }
-  componentDidMount(){
-    console.log("<Header /> has finished mounted");
+    console.log(this.props);
   }
   render(){
     return(
@@ -17,13 +14,13 @@ export class Header extends React.Component {
         </div>
         <div id="logo" className="light-version">
         <span>
-            APP NAME
+          {this.props.metaData.appTitle}
         </span>
         </div>
         <nav role="navigation">
           <div className="header-link hide-menu"><i className="fa fa-bars"></i></div>
           <div className="small-logo">
-            <span className="text-primary">APP NAME</span>
+            <span className="text-primary">{this.props.metaData.appTitle}</span>
           </div>
           <form role="search" className="navbar-form-custom" method="post" action="#">
             <div className="form-group">
