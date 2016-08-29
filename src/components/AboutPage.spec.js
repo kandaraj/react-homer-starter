@@ -5,12 +5,6 @@ import AboutPage from './AboutPage';
 
 describe('<AboutPage />', () => {
 
-  it('should have the about page', () => {
-    "use strict";
-    const wrapper = shallow(<AboutPage/>);
-    const h2 = wrapper.find('h2').text();
-    console.log(h2)
-  })
 
   it('should have a header called \'About\'', () => {
     const wrapper = shallow(<AboutPage />);
@@ -30,7 +24,6 @@ describe('<AboutPage />', () => {
   it('should link to an unknown route path', () => {
     const wrapper = shallow(<AboutPage />);
     const actual = wrapper.findWhere(n => n.prop('to') === '/badlink').length;
-    console.log(wrapper.findWhere(n => n.prop('to') === '/badlink'));
     const expected = 1;
 
     expect(actual).to.be.equal(expected);

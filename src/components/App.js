@@ -1,16 +1,19 @@
 import React, { PropTypes } from 'react';
 import { Link, IndexLink } from 'react-router';
 
+// Includes the child containers and components
+import Header from '../containers/header';
+
+// Include all the root level styles and JS
+
+
 const App = (props) => {
   return (
     <div>
-      <IndexLink to="/">Home</IndexLink>
-      {' | '}
-      <Link to="/fuel-savings">Demo App</Link>
-      {' | '}
-      <Link to="/about">About</Link>
-      <br/>
+    <Header/>
+    <div>
       {props.children}
+    </div>
     </div>
   );
 };
