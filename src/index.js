@@ -17,6 +17,7 @@ import 'slimscroll';
 import 'metismenu';
 import './styles/homer';
 import './styles/homer/style.scss';
+import './styles/animate.css';
 
 import { syncHistoryWithStore } from 'react-router-redux';
 
