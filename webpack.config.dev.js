@@ -35,7 +35,11 @@ export default {
         collapseWhitespace: true
       },
       inject: true
-    })
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    }),
   ],
   module: {
     loaders: [
